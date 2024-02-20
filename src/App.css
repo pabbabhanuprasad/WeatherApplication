@@ -1,5 +1,5 @@
 .body {
-  background-image: url("https://th.bing.com/th/id/R.883de0470dfe15a60e1f17f0cd549781?rik=ttz9knU1FhT7Rw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f05%2f24%2f304149-nature.jpg&ehk=K52fxc%2fbROYh%2faURZJftf3SyfqIikZwQdOioR6Zx4N0%3d&risl=&pid=ImgRaw&r=0");
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__480.jpg");
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -9,24 +9,18 @@
   height: 100vh;
 }
 
-.body {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-
 .title {
   display: grid;
   justify-content: center;
-  color: yellow;
+  color: rgb(113, 247, 158);
+  font-size: 24px;
 }
 
-.demo1,
-.demo2,
-.demo3,
-.demo4 {
-  color: rgb(213, 234, 21);
+.para1,
+.para2,
+.para3,
+.heading {
+  color: rgb(113, 247, 158);
 }
 
 @media only screen and (max-width: 600px) {
@@ -35,123 +29,19 @@
     margin: 0;
     padding: 0;
   }
-
-  .title {
-    font-size: 24px;
-  }
-
-  .para1,
-  .para2,
-  .para3,
-  .heading {
-    font-size: 14px;
-  }
-
-  form {
-    margin-top: 20px;
-  }
-
-  input[type="text"] {
-    width: 80%;
-    height: 30px;
-    font-size: 14px;
-  }
-
-  button {
-    width: 80%;
-    height: 40px;
-    font-size: 16px;
-  }
 }
 
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-.body {
-  width: 500px;
-  height: 500px;
-  background-color: aqua;
-  margin-left: 500px;
-  margin-top: 150px;
-}
 
-.c1 {
-  width: 500px;
-  height: 5 00px;
-  background-color: rgb(191, 201, 218);
-}
-.image {
-  width: 100%;
-  height: 100%;
-}
 
-.body {
-  /* background-image: url('https://th.bing.com/th/id/R.883de0470dfe15a60e1f17f0cd549781?rik=ttz9knU1FhT7Rw&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f05%2f24%2f304149-nature.jpg&ehk=K52fxc%2fbROYh%2faURZJftf3SyfqIikZwQdOioR6Zx4N0%3d&risl=&pid=ImgRaw&r=0'); */
-  background-image: url("https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405__480.jpg");
 
-  background-size: cover;
 
-  background-position: center;
 
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  width: 100vw;
-  height: 100vh;
-}
 
-.content {
-  padding: 80px;
-  text-align: center;
-  color: #333;
-}
 
-.title {
-  display: grid;
-  justify-content: center;
-
-  color:white;
-}
-.para1,.para2,.para3 {
-  color: rgb(177, 236, 30);
-}
-.heading {
-  color: rgb(177, 236, 30);
-}
 

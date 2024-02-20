@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import { FaTint, FaWind } from "react-icons/fa";
+import { WiHumidity } from "react-icons/wi";
+import { WiDayWindy } from "react-icons/wi";
 
 let App = () => {
   let [city, setCity] = useState("");
@@ -9,7 +10,6 @@ let App = () => {
   const [speed, setNewSpeed] = useState(null);
   const [humidity, setNewHumidity] = useState(null);
   const [desc, setNewDesc] = useState(null);
- 
 
   let handleChange = (e) => {
     setCity(e.target.value);
@@ -47,15 +47,22 @@ let App = () => {
   return (
     <div className="body">
       <center>
-        <div className="title">
+        <div>
           <br />
           <br />
-        
-          <h3>Weather App</h3>
+
+          <h3 className="title">Weather App</h3>
         </div>
         <form onSubmit={handleSubmit}>
           <input
-            style={{ width: "280px", height: "40px", backgroundColor: "white" }}
+            style={{
+              marginTop: "20px",
+              width: "280px",
+              height: "40px",
+              backgroundColor: "white",
+              border: "none",
+              borderRadius:"10px"
+            }}
             type="text"
             value={city}
             name="city"
@@ -65,16 +72,28 @@ let App = () => {
           <br />
           <br />
 
-          <button className="btn" type="submit">
-            Get
+          <button
+            style={{
+              width: "10%",
+              height: "40px",
+              fontSize: "16px",
+              border:"none",
+              backgroundColor:"blue",
+              borderRadius:"10px",
+              color:"white"
+            }}
+            type="submit"
+          >
+            Check
           </button>
+          <br />
           <br />
           <p className="para1">Description: {desc}</p>
           <p className="para2">
-            <FaWind /> Speed: {speed}
+            <WiDayWindy /> Speed: {speed}
           </p>
           <p className="para3">
-            <FaTint /> Humidity: {humidity}
+            <WiHumidity /> Humidity: {humidity}
           </p>
         </form>
         <h2 className="heading">{temp}</h2>
